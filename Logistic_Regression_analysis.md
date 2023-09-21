@@ -64,6 +64,7 @@ $y(i):$ i-th example of target data.
 The matrix representation of a classification problem is presented below:
 
 * **Feature matrix or X(Matrix)**
+
 $$ X = \begin{bmatrix}
 w_{0} & X_{1} & X_{2} & X_{3} & X_{n} \\ 
 1 & a_{12} & a_{13} & ... &a_{1n} \\ 
@@ -71,9 +72,10 @@ w_{0} & X_{1} & X_{2} & X_{3} & X_{n} \\
 1 & a_{31} & a_{32} & ... & a_{3n} \\
 ... & ...      & ...      & ... & ....  \\
 1 & a_{n1} & a_{n2} & a_{n3} & a_{nm}  
-\end {bmatrix}_{(m,n+1)}$$
+\end{bmatrix}_{(m,n+1)} $$
 
 *  **Target Vector**
+
 $$ Y = \begin{bmatrix} 
 1 \\ 
 0  \\
@@ -81,6 +83,7 @@ $$ Y = \begin{bmatrix}
 ...  \\
 1 
 \end {bmatrix}_{(m,1)}$$
+
 
 * **Weight Matrix (also known as $\Theta$ (Theta) matrix**
 
@@ -95,13 +98,18 @@ w_n
 The initial value of the weight matrix, `W`, is set to zero. To estimate the predicted `y` with minimum error compared to the actual value of `y`, we need to calculate the model's weights (coefficients). In this article, we will refer to the predicted y as `g(z)` or `y_pred`  
 
 #### Vectorization
-In the preceding section, we discussed the sigmoid function, which takes the following arguments::
+In the preceding section, we discussed the sigmoid function, which takes the following arguments:
+
 $$z = X_i w + w_0$$
+
 So, to estimate the predicted target values, we perform a matrix multiplication between `W` and `X`. As a result, the predicted `y` can be represented as follows::
 
 $$y_{pred} = g(z)$$
+
 whereas,
+
 $$y_{pred} = g(w_{0}*X0_i + w_{1}*X1_i )$$
+
 
 Here, `g(z)` is a sigmoid function that yields values between 0 and 1, as mentioned previously.
 
@@ -148,9 +156,12 @@ $y^{T}$ is transposed of y
 We also know that $Z = X*W$, therefore:
 
 $$Z = X*[ (X^{T} * X)^{-1} * X^{T} * y^T]$$
+
 $$y_{pred} = \frac  { 1 }  { 1 + \exp^{-(X*W )}  } $$
+
 whereas
-$$y_{pred} = \frac  { 1 }  { 1 + \exp ^{-( X*[ (X^{T} * X)^{-1} * X^{T} * y^T] ) } }$$
+
+$$y_{pred} = \frac  { 1 }  { 1 + \exp ^{-( X*[ (X^{T} * X)^{-1} * X^{T} * y^T] )}}$$
 
 #### Cost Function
 To assess the accuracy of our predictions compared to validation target values in binary classification tasks, the Log-loss metric is commonly used as a cost function. Here, we present a generic formula for the Log-loss metric.:
@@ -171,9 +182,11 @@ According ScikitLearn, binary class logistic regression minimizes the Log-loss f
 
 > To delve deeper into the Log-loss cost function, you can refer to this [link](https://www.internalpointers.com/post/cost-function-logistic-regression) which is an accurate resource about this topic. 
 
-In our example, we will simplify the Log-loss formula.:
+In our example, we will simplify the Log-loss formula:
 
-$$J(z) =-\frac 1m   * (y ^T*log(g(z)(X (i))) +(1 − y )^T*log(1 − g(z)(X(i))))$$
+
+$$J(z) =-\frac1m*(y^T*log(g(z)(X(i)))+(1−y)^T*log(1−g(z)(X(i))))$$
+
 
 Where:
 
