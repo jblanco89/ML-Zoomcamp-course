@@ -184,14 +184,12 @@ According ScikitLearn, binary class logistic regression minimizes the Log-loss f
 
 In our example, we will simplify the Log-loss formula:
 
-
-$$J(z) =-\frac1m*(y^T*log(g(z)(X(i)))+(1−y)^T*log(1−g(z)(X(i))))$$
-
-
 Where:
 
 $m:$ Number of examples in train data (rows)
+
 $T:$ Transposed matrix
+
 $g(z):$ y predicted 
 
 ### Practice Example
