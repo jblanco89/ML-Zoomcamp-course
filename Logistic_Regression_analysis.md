@@ -184,6 +184,8 @@ According ScikitLearn, binary class logistic regression minimizes the Log-loss f
 
 In our example, we will simplify the Log-loss formula:
 
+$$J(z)=-\frac 1m (y^T * log(y_{pred} * (X(i)))+(1 − y)^T * log(1 − y_{pred}(X(i))))$$
+
 Where:
 
 $m:$ Number of examples in train data (rows)
@@ -197,7 +199,7 @@ For this example we are going to use [HCV dataset](https://archive.ics.uci.edu/d
 The data set contains laboratory values of blood donors and Hepatitis C patients along with demographic values like age. The target attribute for classification is Category:
 {'0=Blood Donor', '0=suspect Blood Donor', '1=Hepatitis', '2=Fibrosis', '3=Cirrhosis'}
 
-*You can see full code notebook following this [link]()*
+*You can see full code notebook following this [link](https://github.com/jblanco89/ML-Zoomcamp-course/blob/main/LogisticRegressionPractice.ipynb)*
 
 ```python
     #Import libraries
