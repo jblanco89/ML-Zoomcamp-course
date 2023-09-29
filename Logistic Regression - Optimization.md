@@ -101,6 +101,8 @@ $$W = \begin{bmatrix}
 \end{bmatrix}$$
 
 We can visualize cost function decreasing here:
+
+
 ![cost-decreasing-result](https://drive.google.com/uc?export=view&id=1LSuy_C0qJk8sC6pPe3yNgJQZj8Oqo_Ho)
 
 As you can see, mantaining a learning rate of ($\alpha = 0.001$) constant and with `30 epochs`, The cost function decreased from `0.41` to `0.18`, indicating an improvement of approximately `43%` in model weight estimation. 
