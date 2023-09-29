@@ -97,8 +97,8 @@ $$W = \begin{bmatrix}
 0.013 \\
 -0.016 \\
 -0.043 \\
--0.008
-\end{bmatrix}$$
+-0.008 \\
+ \end{bmatrix}$$
 
 We can visualize cost function decreasing here:
 
