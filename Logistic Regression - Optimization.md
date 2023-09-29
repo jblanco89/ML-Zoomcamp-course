@@ -90,15 +90,15 @@ W_opt, y_pred_opt = logistic_regression(X=X_all,
 										epoch=30)
 ```
 Optimized weigths are now:
-$$W = \begin{bmatrix} 
+$$ W= \begin{bmatrix}
 0.857 \\
 0.080 \\
 -0.014 \\
 0.013 \\
 -0.016 \\
 -0.043 \\
--0.008 \\
- \end{bmatrix}$$
+-0.008
+\end{bmatrix}$$
 
 We can visualize cost function decreasing here:
 
