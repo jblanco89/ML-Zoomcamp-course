@@ -133,7 +133,7 @@ def  eval_metrics(y, y_pred, metrics =['acc',  'f1',  'cm']):
 ``` 
 The combined training and validation datasets for features and targets have been labeled as `X_all` and `y_all`, respectively. With the `GD` optimization, the training and validation data achieved an accuracy of 93% and an f-1 score of 96.4%, compared to 91% accuracy and 95% f-1 score without `GD` optimization. In testing, we obtained an f-1 score of 98% and an accuracy of 96%.
 
-![Confusion-Matrix](https://drive.google.com/uc?export=view&id=1nPkvxKlg0ByepLZ56hkvEi36BEOWtm-a)
+![Confusion-Matrix](https://drive.google.com/uc?export=view&id=1AXFD2H-ZICxqfIhFPNjbreWkxMxUOnt4)
 
 ### Conclusion
 We have employed the gradient descent optimization technique to enhance the prediction performance of our logistic regression model. In comparison to the Normal Equation approach, utilizing an optimization technique enables us to iteratively estimate more suitable coefficients (weights) by following the gradient direction of the objective function (Log-loss). It's important to highlight that keeping the learning rate constant is advisable, and it should neither be too small nor too large.
